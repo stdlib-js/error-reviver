@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/error-reviver",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Revive a JSON-serialized error object.",
   "license": "Apache-2.0",
   "author": {
