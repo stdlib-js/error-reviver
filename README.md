@@ -196,7 +196,7 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/error-reviver/main/LICENSE
 
-[@stdlib/error/to-json]: https://github.com/stdlib-js/utils-error-to-json
+[@stdlib/error/to-json]: https://github.com/stdlib-js/error-to-json
 
 [mdn-error]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error
 
