@@ -139,6 +139,20 @@ bool = ( err1.stack === err2.stack );
 
 <!-- /.references -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/error/to-json`][@stdlib/error/to-json]: return a JSON representation of an error object.
+
+</section>
+
+<!-- /.related -->
+
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 
@@ -196,8 +210,6 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/error-reviver/main/LICENSE
 
-[@stdlib/error/to-json]: https://github.com/stdlib-js/error-to-json
-
 [mdn-error]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error
 
 [mdn-type-error]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError
@@ -211,6 +223,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [mdn-uri-error]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError
 
 [mdn-eval-error]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError
+
+<!-- <related-links> -->
+
+[@stdlib/error/to-json]: https://github.com/stdlib-js/error-to-json
+
+<!-- </related-links> -->
 
 </section>
 
