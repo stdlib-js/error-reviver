@@ -1,0 +1,41 @@
+{
+  "name": "@stdlib/error-reviver",
+  "version": "0.0.0",
+  "description": "Revive a JSON-serialized error object.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/error-reviver.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdutils",
+    "stdutil",
+    "utils",
+    "util",
+    "utilities",
+    "utility",
+    "error",
+    "err",
+    "json",
+    "reviver",
+    "revive",
+    "unmarshal",
+    "deserialize",
+    "from",
+    "convert",
+    "parse",
+    "object",
+    "obj"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
