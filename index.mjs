@@ -1,4 +1,0 @@
-// Copyright (c) 2022 The Stdlib Authors. License is Apache-2.0: http://www.apache.org/licenses/LICENSE-2.0
-/// <reference types="./index.d.ts" />
-import r from"https://cdn.jsdelivr.net/gh/stdlib-js/utils-keys@esm/index.mjs";import e from"https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-string@esm/index.mjs";var s={Error:Error,TypeError:TypeError,SyntaxError:SyntaxError,ReferenceError:ReferenceError,URIError:URIError,EvalError:EvalError,RangeError:RangeError},t=r,n=e.isPrimitive,o=s;var i=function(r,e){var s,i,a,E,m,f;if(e&&e.type&&n(e.message)&&(i=o[e.type])){for(E=new i(e.message),a=t(e),f=0;f<a.length;f++)if("type"!==(m=a[f])&&"message"!==m&&"name"!==m){if("stack"===m){if(!n(e[m]))continue;s=!0}E[m]=e[m]}return!s&&n(E.stack)&&(E.stack=""),E}return e};export{i as default};
-//# sourceMappingURL=index.mjs.map
