@@ -34,14 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/error-reviver
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import reviveError from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-reviver@esm/index.mjs';
+var reviveError = require( '@stdlib/error-reviver' );
 ```
 
 #### reviveError( key, value )
@@ -49,13 +65,15 @@ import reviveError from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-reviver@esm
 Revives a JSON-serialized [error][@stdlib/error/to-json] object.
 
 ```javascript
+var parseJSON = require( '@stdlib/utils-parse-json' );
+
 var str = '{"type":"TypeError","message":"beep"}';
 
-var err = JSON.parse( str, reviveError );
+var err = parseJSON( str, reviveError );
 // returns <TypeError>
 ```
 
-For details on the JSON serialization format, see [error-to-json][@stdlib/error/to-json].
+For details on the JSON serialization format, see [`@stdlib/error/to-json`][@stdlib/error/to-json].
 
 </section>
 
@@ -89,20 +107,16 @@ For details on the JSON serialization format, see [error-to-json][@stdlib/error/
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import err2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-to-json@esm/index.mjs';
-import reviveError from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-reviver@esm/index.mjs';
+```javascript
+var parseJSON = require( '@stdlib/utils-parse-json' );
+var err2json = require( '@stdlib/error-to-json' );
+var reviveError = require( '@stdlib/error-reviver' );
 
 var err1 = new SyntaxError( 'bad syntax' );
 // returns <SyntaxError>
 
 var json = err2json( err1 );
-/* returns
+/* e.g., returns
     {
         'type': 'SyntaxError',
         'name': 'SyntaxError',
@@ -112,9 +126,9 @@ var json = err2json( err1 );
 */
 
 var str = JSON.stringify( json );
-// returns '{"type":"SyntaxError","name":"SyntaxError","message":"bad syntax","stack":"..."}'
+// e.g., returns '{"type":"SyntaxError","name":"SyntaxError","message":"bad syntax","stack":"..."}'
 
-var err2 = JSON.parse( str, reviveError );
+var err2 = parseJSON( str, reviveError );
 // returns <SyntaxError>
 
 var bool = ( err1.message === err2.message );
@@ -122,10 +136,6 @@ var bool = ( err1.message === err2.message );
 
 bool = ( err1.stack === err2.stack );
 // returns true
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -163,7 +173,7 @@ bool = ( err1.stack === err2.stack );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -237,11 +247,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [mdn-eval-error]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError
 
-<!-- <related-links> -->
-
-[@stdlib/error/to-json]: https://github.com/stdlib-js/error-to-json/tree/esm
-
-<!-- </related-links> -->
+[@stdlib/error/to-json]: https://github.com/stdlib-js/error-to-json
 
 </section>
 
