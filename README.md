@@ -65,13 +65,15 @@ var reviveError = require( '@stdlib/error-reviver' );
 Revives a JSON-serialized [error][@stdlib/error/to-json] object.
 
 ```javascript
+var parseJSON = require( '@stdlib/utils-parse-json' );
+
 var str = '{"type":"TypeError","message":"beep"}';
 
-var err = JSON.parse( str, reviveError );
+var err = parseJSON( str, reviveError );
 // returns <TypeError>
 ```
 
-For details on the JSON serialization format, see [error-to-json][@stdlib/error/to-json].
+For details on the JSON serialization format, see [`@stdlib/error/to-json`][@stdlib/error/to-json].
 
 </section>
 
@@ -106,6 +108,7 @@ For details on the JSON serialization format, see [error-to-json][@stdlib/error/
 <!-- eslint no-undef: "error" -->
 
 ```javascript
+var parseJSON = require( '@stdlib/utils-parse-json' );
 var err2json = require( '@stdlib/error-to-json' );
 var reviveError = require( '@stdlib/error-reviver' );
 
@@ -113,7 +116,7 @@ var err1 = new SyntaxError( 'bad syntax' );
 // returns <SyntaxError>
 
 var json = err2json( err1 );
-/* returns
+/* e.g., returns
     {
         'type': 'SyntaxError',
         'name': 'SyntaxError',
@@ -123,9 +126,9 @@ var json = err2json( err1 );
 */
 
 var str = JSON.stringify( json );
-// returns '{"type":"SyntaxError","name":"SyntaxError","message":"bad syntax","stack":"..."}'
+// e.g., returns '{"type":"SyntaxError","name":"SyntaxError","message":"bad syntax","stack":"..."}'
 
-var err2 = JSON.parse( str, reviveError );
+var err2 = parseJSON( str, reviveError );
 // returns <SyntaxError>
 
 var bool = ( err1.message === err2.message );
@@ -244,11 +247,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [mdn-eval-error]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError
 
-<!-- <related-links> -->
-
 [@stdlib/error/to-json]: https://github.com/stdlib-js/error-to-json
-
-<!-- </related-links> -->
 
 </section>
 
