@@ -73,7 +73,7 @@ var err = parseJSON( str, reviveError );
 // returns <TypeError>
 ```
 
-For details on the JSON serialization format, see [`@stdlib/error/to-json`][@stdlib/error/to-json].
+For details on the JSON serialization format, see [`@stdlib/error-to-json`][@stdlib/error/to-json].
 
 </section>
 
@@ -158,7 +158,7 @@ bool = ( err1.stack === err2.stack );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/error/to-json`][@stdlib/error/to-json]</span><span class="delimiter">: </span><span class="description">return a JSON representation of an error object.</span>
+-   <span class="package-name">[`@stdlib/error-to-json`][@stdlib/error/to-json]</span><span class="delimiter">: </span><span class="description">return a JSON representation of an error object.</span>
 
 </section>
 
