@@ -34,14 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/error-reviver
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import reviveError from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-reviver@esm/index.mjs';
+var reviveError = require( '@stdlib/error-reviver' );
 ```
 
 #### reviveError( key, value )
@@ -49,7 +65,7 @@ import reviveError from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-reviver@esm
 Revives a JSON-serialized [error][@stdlib/error/to-json] object.
 
 ```javascript
-import parseJSON from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-parse-json@esm/index.mjs';
+var parseJSON = require( '@stdlib/utils-parse-json' );
 
 var str = '{"type":"TypeError","message":"beep"}';
 
@@ -91,15 +107,10 @@ For details on the JSON serialization format, see [`@stdlib/error-to-json`][@std
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import parseJSON from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-parse-json@esm/index.mjs';
-import err2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-to-json@esm/index.mjs';
-import reviveError from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-reviver@esm/index.mjs';
+```javascript
+var parseJSON = require( '@stdlib/utils-parse-json' );
+var err2json = require( '@stdlib/error-to-json' );
+var reviveError = require( '@stdlib/error-reviver' );
 
 var err1 = new SyntaxError( 'bad syntax' );
 // returns <SyntaxError>
@@ -125,10 +136,6 @@ var bool = ( err1.message === err2.message );
 
 bool = ( err1.stack === err2.stack );
 // returns true
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -166,7 +173,7 @@ bool = ( err1.stack === err2.stack );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -210,7 +217,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -240,7 +247,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [mdn-eval-error]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError
 
-[@stdlib/error/to-json]: https://github.com/stdlib-js/error-to-json/tree/esm
+[@stdlib/error/to-json]: https://github.com/stdlib-js/error-to-json
 
 </section>
 
