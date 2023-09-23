@@ -54,7 +54,7 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
-reviveError = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/error-reviver@umd/browser.js' )
+reviveError = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/error-reviver@v0.1.0-umd/browser.js' )
 ```
 
 To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
@@ -66,7 +66,7 @@ var reviveError = require( 'path/to/vendor/umd/error-reviver/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/error-reviver@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/error-reviver@v0.1.0-umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -132,7 +132,7 @@ For details on the JSON serialization format, see [`@stdlib/error-to-json`][@std
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-parse-json@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/error-to-json@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/error-reviver@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/error-reviver@v0.1.0-umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
