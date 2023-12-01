@@ -43,7 +43,7 @@
   "devDependencies": {
     "@stdlib/assert-is-function": "^0.1.1",
     "@stdlib/assert-is-plain-object": "^0.1.1",
-    "@stdlib/bench": "^0.1.0",
+    "@stdlib/bench": "^0.2.1",
     "@stdlib/error-to-json": "^0.1.0",
     "@stdlib/utils-copy": "^0.1.0",
     "@stdlib/utils-parse-json": "^0.1.1",
