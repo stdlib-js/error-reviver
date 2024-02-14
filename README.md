@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import reviveError from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-reviver@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/error-reviver/tags). For example,
+
+```javascript
 import reviveError from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-reviver@v0.2.0-deno/mod.js';
 ```
 
@@ -105,7 +110,7 @@ For details on the JSON serialization format, see [`@stdlib/error-to-json`][@std
 ```javascript
 import parseJSON from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-parse-json@deno/mod.js';
 import err2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-to-json@deno/mod.js';
-import reviveError from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-reviver@v0.2.0-deno/mod.js';
+import reviveError from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-reviver@deno/mod.js';
 
 var err1 = new SyntaxError( 'bad syntax' );
 // returns <SyntaxError>
