@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import reviveError from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-reviver@deno/mod.js';
+import reviveError from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-reviver@v0.2.1-deno/mod.js';
 ```
 
 #### reviveError( key, value )
@@ -105,7 +105,7 @@ For details on the JSON serialization format, see [`@stdlib/error-to-json`][@std
 ```javascript
 import parseJSON from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-parse-json@deno/mod.js';
 import err2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-to-json@deno/mod.js';
-import reviveError from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-reviver@deno/mod.js';
+import reviveError from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-reviver@v0.2.1-deno/mod.js';
 
 var err1 = new SyntaxError( 'bad syntax' );
 // returns <SyntaxError>
