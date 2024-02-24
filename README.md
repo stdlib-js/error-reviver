@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import reviveError from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-reviver@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/error-reviver/tags). For example,
+
+```javascript
 import reviveError from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-reviver@v0.2.1-esm/index.mjs';
 ```
 
@@ -110,7 +115,7 @@ For details on the JSON serialization format, see [`@stdlib/error-to-json`][@std
 
 import parseJSON from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-parse-json@esm/index.mjs';
 import err2json from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-to-json@esm/index.mjs';
-import reviveError from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-reviver@v0.2.1-esm/index.mjs';
+import reviveError from 'https://cdn.jsdelivr.net/gh/stdlib-js/error-reviver@esm/index.mjs';
 
 var err1 = new SyntaxError( 'bad syntax' );
 // returns <SyntaxError>
