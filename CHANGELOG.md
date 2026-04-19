@@ -2,6 +2,40 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2026-04-19)
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`7ef7dea`](https://github.com/stdlib-js/stdlib/commit/7ef7deae38e41305a780674ab660fb51bd28d03c) - **bench:** refactor to use string interpolation in `error` [(#11616)](https://github.com/stdlib-js/stdlib/pull/11616) _(by Karan Anand)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 1 person contributed to this release. Thank you to this contributor:
+
+-   Karan Anand
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.2.3">
 
 ## 0.2.3 (2026-02-07)
